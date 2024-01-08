@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PASSWORD GENERATOR</h1> 
+
+        <div class="display-container">
+
+            <input readonly placeholder="Password" id="a" class="=display" data-passwordDisplay>
+
+            <button class="copyBtn" data-copy>
+                <span class="tool" data-copyMsg></span>
+                <img src="copy-icon.webp" alt="copy" width="23" height="23">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>password length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+
+            <!-- check box -->
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">include uppercase letter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">include lowercase letter</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="numbers">
+                <label for="number">include number</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="symbols">
+                <label for="symbol">include symbol</label>
+            </div>
+            <!-- strength section -->
+            <div class="strength-container">
+                <p>strength</p>
+                <div class="indicator" data-indicator></div>
+            </div>
+            <!-- generate password -->
+            <button class="generateButton">generate password</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
