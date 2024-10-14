@@ -10,7 +10,7 @@ const symbolsCheck =document.querySelector("#symbols");
 const indicator =document.querySelector("[data-indicator]");
 const genterateBtn =document.querySelector(".generateButton");
 const allCheckBox =document.querySelectorAll("input[type=checkbox]");
-const symbols = '~`!@#$%^&*()_-=+{}[]<>.?';
+const symbols = '~`!@#$%^&*()_-=+{}[]<>.?'; 
 
 let password = "";
 let passwordLength = 10;  
@@ -40,7 +40,7 @@ function getRndInteger(min , max){
 }
 
 function generateRandomNumber(){
-    return getRndInteger(0,9);
+    return getRndInteger(0,9); 
 }
 
 function genterateLowerCase(){
@@ -176,7 +176,7 @@ genterateBtn.addEventListener('click', () =>{
         funcArr.push(genterateSymbol); 
 
     for(let i=0; i<funcArr.length; i++){
-        password += funcArr[i]();
+        password += funcArr[i](); 
     }
 
     for(let i=0; i<passwordLength-funcArr.length; i++){
